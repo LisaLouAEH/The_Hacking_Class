@@ -9,16 +9,16 @@
 
 * 3 tableaux répartis comme suis/  
 
-L tab **student** :   
+L tab **students** :   
 ----L champs :  
---------L id (integer primary key autoincrement)  
+--------L id (integer primary key autoincrement) 
+--------L course_id (belongs_to courses: index) 
 --------L name (string)   
   
 L tab **courses**:  
 ----L champs :  
---------L id (integer primary key autoincrement)  
---------L user_id (belongs_to user: index)   
---------L pin_url (string)   
+--------L id (integer primary key autoincrement)     
+--------L title (string)   
 
   
 * Un étudiant est inscrit à un seul cours 
